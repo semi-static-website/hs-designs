@@ -1,0 +1,76 @@
+name: Deploy Vite app to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: hs-react/package-lock.json
+
+      - name: Install dependencies
+        working-directory: hs-react
+        run: npm ci
+
+      - name: Lint (if available)
+        working-directory: hs-react
+        run: |
+          if npm run -s | grep -q " lint\\s"; then
+            npm run lint
+          else
+            echo "No lint script defined; skipping."
+          fi
+
+      - name: Test (if available)
+        working-directory: hs-react
+        run: |
+          if npm run -s | grep -q " test\\s"; then
+            npm test -- --ci --reporters=default
+          else
+            echo "No test script defined; skipping."
+          fi
+
+      - name: Build
+        working-directory: hs-react
+        env:
+          # Set base to "/<repo>/" for project Pages. For user/org Pages, leave as "/".
+          BASE: "/${{ github.event.repository.name }}/"
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: hs-react/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

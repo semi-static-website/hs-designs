@@ -1,0 +1,44 @@
+:root{--accent-start:#4f46e5;--accent-end:#06b6d4;--accent:#4f46e5}
+
+/* Section titles: gradient underline */
+.section-title h2{display:inline-block;position:relative;padding-bottom:8px}
+.section-title h2:after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--accent-start),var(--accent-end))}
+
+/* Header overlay: subtle gradient tint */
+#header .intro .overlay{background:linear-gradient(135deg,rgba(79,70,229,.45),rgba(6,182,212,.45)),rgba(0,0,0,.35)}
+
+/* Buttons: vivid gradient + lift */
+.btn.btn-custom{background:linear-gradient(90deg,var(--accent-start),var(--accent-end));border:none;color:#fff !important;box-shadow:0 8px 20px rgba(79,70,229,.25);transition:transform .25s ease, box-shadow .25s ease}
+.btn.btn-custom:hover,.btn.btn-custom:focus{transform:translateY(-2px);box-shadow:0 12px 28px rgba(6,182,212,.28)}
+
+/* Services: image card pop */
+#services .service-media img{border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.12);transition:transform .3s ease, box-shadow .3s ease}
+#services .col-md-4:hover .service-media img{transform:translateY(-4px) scale(1.02);box-shadow:0 16px 36px rgba(0,0,0,.18)}
+#services .service-desc h3{position:relative;display:inline-block;padding-bottom:6px}
+#services .service-desc h3:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--accent-start),var(--accent-end))}
+
+/* Team: card elevation + gentle hover */
+.team-card .thumbnail{background:#fff;border-radius:16px;box-shadow:0 10px 26px rgba(0,0,0,.10);transition:transform .25s ease, box-shadow .25s ease;padding-bottom:16px}
+.team-card .thumbnail:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.16)}
+
+/* Portfolio: edge fades + stronger hovers */
+.portfolio-strip{position:relative}
+.portfolio-strip:before,.portfolio-strip:after{content:"";position:absolute;top:0;bottom:0;width:56px;z-index:2;pointer-events:none}
+.portfolio-strip:before{left:0;background:linear-gradient(90deg,#fff,rgba(255,255,255,0))}
+.portfolio-strip:after{right:0;background:linear-gradient(270deg,#fff,rgba(255,255,255,0))}
+
+.portfolio-card .portfolio-thumb{border-radius:14px;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.10);transition:transform .25s ease, box-shadow .25s ease}
+.portfolio-card:hover .portfolio-thumb{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.16)}
+.portfolio-card .portfolio-overlay{background:linear-gradient(180deg,rgba(0,0,0,0) 40%, rgba(0,0,0,.55) 100%)}
+
+/* Lightbox: slightly crisper image appear */
+.lightbox-img{transition:opacity .25s ease, transform .25s ease}
+.lightbox-img.is-loaded{opacity:1;transform:scale(1)}
+
+/* Map embed: rounded corners + shadow */
+.map-embed{margin-bottom:24px}
+.map-embed iframe{border:0;border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.12)}
+
+/* Map actions */
+.map-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:12px 0 28px}
+.map-actions .btn{min-width:180px}

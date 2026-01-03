@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  build:
+    name: Install, Lint, Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: hs-react/package-lock.json
+
+      - name: Install dependencies
+        working-directory: hs-react
+        run: npm ci
+
+      - name: Lint (if available)
+        working-directory: hs-react
+        run: |
+          if npm run -s | grep -q " lint\s"; then
+            npm run lint
+          else
+            echo "No lint script defined; skipping."
+          fi
+
+      - name: Test (if available)
+        working-directory: hs-react
+        run: |
+          if npm run -s | grep -q " test\s"; then
+            npm test -- --ci --reporters=default
+          else
+            echo "No test script defined; skipping."
+          fi
+
+      - name: Build
+        working-directory: hs-react
+        run: npm run build
+
+      - name: Upload build artifact (optional)
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: hs-react-dist
+          path: hs-react/dist
+          if-no-files-found: ignore
