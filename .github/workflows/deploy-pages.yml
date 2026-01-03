@@ -55,6 +55,11 @@ jobs:
           BASE: "/${{ github.event.repository.name }}/"
         run: npm run build
 
+      - name: Audit (log only, non-blocking)
+        working-directory: hs-react
+        continue-on-error: true
+        run: npm audit --audit-level=moderate
+
       - name: Copy static assets into dist
         run: |
           mkdir -p hs-react/dist

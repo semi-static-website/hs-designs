@@ -57,3 +57,8 @@ jobs:
           name: hs-react-dist
           path: hs-react/dist
           if-no-files-found: ignore
+
+      - name: Audit (log only, non-blocking)
+        working-directory: hs-react
+        continue-on-error: true
+        run: npm audit --audit-level=moderate
