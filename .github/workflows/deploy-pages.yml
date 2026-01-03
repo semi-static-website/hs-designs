@@ -44,6 +44,10 @@ jobs:
             echo "No test script defined; skipping."
           fi
 
+      - name: Audit (moderate or higher)
+        working-directory: hs-react
+        run: npm audit --audit-level=moderate
+
       - name: Build
         working-directory: hs-react
         env:
