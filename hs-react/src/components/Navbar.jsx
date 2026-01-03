@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Navbar() {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -19,7 +21,7 @@ export default function Navbar() {
             <li><a href="#services" className="page-scroll">Services</a></li>
             <li><a href="#portfolio" className="page-scroll">Projects</a></li>
             <li><a href="#contact" className="page-scroll">Contact</a></li>
-            <li><a href="/video">Video</a></li>
+            <li><Link to="/video">Video</Link></li>
           </ul>
         </div>
       </div>
