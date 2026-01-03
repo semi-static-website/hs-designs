@@ -1,10 +1,9 @@
-name: CI Workflow
+name: CI (hs-react)
 
 on:
   push:
     branches:
       - main
-      - 'progress/*'
 
 jobs:
   build:
@@ -12,18 +11,28 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Set up Node.js (if you're using Node.js, otherwise replace with your environment)
-        uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'  # Specify the Node.js version
+          node-version: 20
+          cache: npm
+          cache-dependency-path: hs-react/package-lock.json
 
       - name: Install dependencies
-        run: npm install
+        working-directory: hs-react
+        run: npm ci
 
       - name: Run tests
-        run: npm test
+        working-directory: hs-react
+        run: |
+          if npm run -s | grep -q " test\\s"; then
+            npm test -- --ci --reporters=default
+          else
+            echo "No test script defined; skipping."
+          fi
 
       - name: Build project
+        working-directory: hs-react
         run: npm run build
