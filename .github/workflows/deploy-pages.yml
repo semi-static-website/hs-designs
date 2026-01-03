@@ -8,6 +8,9 @@ on:
       - react_ui
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -44,12 +47,22 @@ jobs:
             echo "No test script defined; skipping."
           fi
 
+      - name: Audit (log only, non-blocking)
+        working-directory: hs-react
+        continue-on-error: true
+        run: npm audit --audit-level=moderate
+
       - name: Build
         working-directory: hs-react
         env:
           # For project Pages under /<repo>/
           BASE: "/${{ github.event.repository.name }}/"
         run: npm run build
+
+      - name: Audit (log only, non-blocking)
+        working-directory: hs-react
+        continue-on-error: true
+        run: npm audit --audit-level=moderate
 
       - name: Copy static assets into dist
         run: |
@@ -61,5 +74,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: hs-react/dist
+          publish_branch: gh-pages
           # Create/refresh gh-pages with a clean history
           force_orphan: true

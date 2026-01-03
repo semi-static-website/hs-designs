@@ -15,7 +15,8 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="%BASE_URL%src/main.jsx"></script>
+    <!-- Vite entry must be referenced without BASE prefix for bundling -->
+    <script type="module" src="/src/main.jsx"></script>
     <!-- Legacy scripts to support Bootstrap v3 collapse and existing behaviors -->
     <script src="%BASE_URL%js/jquery.1.11.1.js"></script>
     <script src="%BASE_URL%js/bootstrap.js"></script>
