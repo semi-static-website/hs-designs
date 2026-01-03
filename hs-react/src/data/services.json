@@ -1,27 +1,27 @@
 [
   {
-    "img": "/img/services/service-1.jpg",
+    "img": "../img/services/service-1.jpg",
     "title": "MDDA Approved Maps",
     "desc": "Get your MDDA approved maps with our expert mapping services. We ensure compliance with all regulations for a smooth approval process."},
   {
-    "img": "/img/services/service-2.jpg",
+    "img": "../img/services/service-2.jpg",
     "title": "Landscape Design",
     "desc": "Transform your outdoor space with our innovative landscape design services. We create beautiful, functional environments tailored to your needs."},
   {
-    "img": "/img/services/service-3.jpg",
+    "img": "../img/services/service-3.jpg",
     "title": "Home Remodels",
     "desc": "Revitalize your home with modern designs and luxury finishes. We transform your space into a relaxing and stylish retreat."
   },
   {
-    "img": "/img/services/service-4.jpg",
+    "img": "../img/services/service-4.jpg",
     "title": "Interiors Design",
     "desc": "Elevate your living spaces with our expert interior design services. We blend aesthetics and functionality to create environments that reflect your style."},
   {
-    "img": "/img/services/service-5.jpg",
+    "img": "../img/services/service-5.jpg",
     "title": "Detailed Project Report (DPR)",
     "desc": "Our Detailed Project Reports (DPR) provide comprehensive insights and analyses to help you make informed decisions for your projects."},
   {
-    "img": "/img/services/service-6.jpg",
+    "img": "../img/services/service-6.jpg",
     "title": "Land Digitization/Surveying",
     "desc": "We offer precise land digitization and surveying services using advanced technology to ensure accurate mapping and data collection."}
 ]

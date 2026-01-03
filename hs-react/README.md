@@ -40,8 +40,8 @@ Steps:
 		{
 			"title": "Project X",
 			"images": [
-				{ "small": "/img/portfolio/x1-small.jpg", "large": "/img/portfolio/x1-large.jpg" },
-				{ "small": "/img/portfolio/x2-small.jpg", "large": "/img/portfolio/x2-large.jpg" }
+				{ "small": "../img/portfolio/x1-small.jpg", "large": "../img/portfolio/x1-large.jpg" },
+				{ "small": "../img/portfolio/x2-small.jpg", "large": "../img/portfolio/x2-large.jpg" }
 			]
 		}
 		```
