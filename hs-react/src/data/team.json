@@ -2,13 +2,13 @@
   {
     "name": "Himanshu Joshi",
     "role": "Design Engineer",
-    "photo": "/img/team/himanshu_joshi.jpg",
+    "photo": "../img/team/himanshu_joshi.jpg",
     "bio": "Specializes in building planning and 3D elevation design."
   },
   {
     "name": "Sanjay Panwar",
     "role": "Draftsman",
-    "photo": "/img/team/sanjay_panwar.jpg",
+    "photo": "../img/team/sanjay_panwar.jpg",
     "bio": "Expert in creating detailed technical drawings and blueprints."
   }
 ]

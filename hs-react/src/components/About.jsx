@@ -4,7 +4,7 @@ export default function About() {
       <div className="container">
         <div className="row">
           <div className="col-xs-12 col-md-6">
-            <img src="/img/about.jpg" className="img-responsive" alt="About" />
+            <img src="../img/about.jpg" className="img-responsive" alt="About" />
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
