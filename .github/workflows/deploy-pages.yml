@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - master
+      - 'progress/*'
+      - react_ui
   workflow_dispatch:
 
 permissions:
@@ -58,6 +60,11 @@ jobs:
           # Set base to "/<repo>/" for project Pages. For user/org Pages, leave as "/".
           BASE: "/${{ github.event.repository.name }}/"
         run: npm run build
+
+      - name: Copy static assets into dist
+        run: |
+          mkdir -p hs-react/dist
+          cp -r css fonts img js video hs-react/dist/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
