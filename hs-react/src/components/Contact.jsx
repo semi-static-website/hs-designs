@@ -8,6 +8,11 @@ export default function Contact() {
   const mapsEmbedSrc = `https://www.google.com/maps?q=${qName}&output=embed`
   const mapsDirectionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(mapsShortUrl)}&travelmode=driving`
 
+  // WhatsApp contact deep link
+  const whatsappNumber = '917817802504' // Use Phone 1 as default in international format without '+'
+  const whatsappText = encodeURIComponent('Hello HS DESIGN ENGINEER & CONSULTANT, I would like to enquire about a project.')
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappText}`
+
   const directionsFromHere = () => {
     const open = (url) => window.open(url, '_blank', 'noopener')
     if (!('geolocation' in navigator)) {
@@ -55,7 +60,18 @@ export default function Contact() {
                 <p className="help-block text-danger"></p>
               </div>
               <div id="success"></div>
-              <button type="submit" className="btn btn-custom btn-lg">Send Message</button>
+              <div className="contact-actions">
+                <button type="submit" className="btn btn-custom btn-lg">Send Message</button>
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-whatsapp btn-lg"
+                  aria-label="Chat on WhatsApp"
+                >
+                  <i className="fa fa-whatsapp" aria-hidden="true" /> Chat on WhatsApp
+                </a>
+              </div>
             </form>
           </div>
         </div>
