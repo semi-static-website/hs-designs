@@ -2,81 +2,81 @@
   {
     "title": "Project 1",
     "images": [
-      { "small": "../img/portfolio/project_1.1.jpg", "large": "../img/portfolio/project_1.1.jpg" },
-      { "small": "../img/portfolio/project_1.2.jpg", "large": "../img/portfolio/project_1.2.jpg" }
+      { "small": "img/portfolio/project_1.1.jpg", "large": "img/portfolio/project_1.1.jpg" },
+      { "small": "img/portfolio/project_1.2.jpg", "large": "img/portfolio/project_1.2.jpg" }
     ]
   },
   {
     "title": "Project 2",
     "images": [
-      { "small": "../img/portfolio/project_2.1.jpg", "large": "../img/portfolio/project_2.1.jpg" },
-      { "small": "../img/portfolio/project_2.2.jpg", "large": "../img/portfolio/project_2.2.jpg" }
+      { "small": "img/portfolio/project_2.1.jpg", "large": "img/portfolio/project_2.1.jpg" },
+      { "small": "img/portfolio/project_2.2.jpg", "large": "img/portfolio/project_2.2.jpg" }
     ]
   },
   {
     "title": "Project 3",
     "images": [
-      { "small": "../img/portfolio/project_3.1.jpg", "large": "../img/portfolio/project_3.1.jpg" },
-      { "small": "../img/portfolio/project_3.2.jpg", "large": "../img/portfolio/project_3.2.jpg" }
+      { "small": "img/portfolio/project_3.1.jpg", "large": "img/portfolio/project_3.1.jpg" },
+      { "small": "img/portfolio/project_3.2.jpg", "large": "img/portfolio/project_3.2.jpg" }
     ]
   },
   {
     "title": "Project 4",
     "images": [
-      { "small": "../img/portfolio/project_4.1.jpg", "large": "../img/portfolio/project_4.1.jpg" }
+      { "small": "img/portfolio/project_4.1.jpg", "large": "img/portfolio/project_4.1.jpg" }
     ]
   },
   {
     "title": "Project 5",
     "images": [
-      { "small": "../img/portfolio/project_5.1.jpg", "large": "../img/portfolio/project_5.1.jpg" },
-        { "small": "../img/portfolio/project_5.2.jpg", "large": "../img/portfolio/project_5.2.jpg" },
-        { "small": "../img/portfolio/project_5.3.jpg", "large": "../img/portfolio/project_5.3.jpg" },
-        { "small": "../img/portfolio/project_5.4.jpg", "large": "../img/portfolio/project_5.4.jpg" },
-        { "small": "../img/portfolio/project_5.5.jpg", "large": "../img/portfolio/project_5.5.jpg" },
-        { "small": "../img/portfolio/project_5.6.jpg", "large": "../img/portfolio/project_5.6.jpg" },
-        { "small": "../img/portfolio/project_5.7.jpg", "large": "../img/portfolio/project_5.7.jpg" },
-        { "small": "../img/portfolio/project_5.8.jpg", "large": "../img/portfolio/project_5.8.jpg" },
-        { "small": "../img/portfolio/project_5.9.jpg", "large": "../img/portfolio/project_5.9.jpg" },
-        { "small": "../img/portfolio/project_5.10.jpg", "large": "../img/portfolio/project_5.10.jpg" },
-        { "small": "../img/portfolio/project_5.11.jpg", "large": "../img/portfolio/project_5.11.jpg" },
-        { "small": "../img/portfolio/project_5.12.jpg", "large": "../img/portfolio/project_5.12.jpg" },
-        { "small": "../img/portfolio/project_5.13.jpg", "large": "../img/portfolio/project_5.13.jpg" },
-        { "small": "../img/portfolio/project_5.14.jpg", "large": "../img/portfolio/project_5.14.jpg" },
-        { "small": "../img/portfolio/project_5.15.jpg", "large": "../img/portfolio/project_5.15.jpg" },
-        { "small": "../img/portfolio/project_5.16.jpg", "large": "../img/portfolio/project_5.16.jpg" },
-        { "small": "../img/portfolio/project_5.17.jpg", "large": "../img/portfolio/project_5.17.jpg" }
+      { "small": "img/portfolio/project_5.1.jpg", "large": "img/portfolio/project_5.1.jpg" },
+        { "small": "img/portfolio/project_5.2.jpg", "large": "img/portfolio/project_5.2.jpg" },
+        { "small": "img/portfolio/project_5.3.jpg", "large": "img/portfolio/project_5.3.jpg" },
+        { "small": "img/portfolio/project_5.4.jpg", "large": "img/portfolio/project_5.4.jpg" },
+        { "small": "img/portfolio/project_5.5.jpg", "large": "img/portfolio/project_5.5.jpg" },
+        { "small": "img/portfolio/project_5.6.jpg", "large": "img/portfolio/project_5.6.jpg" },
+        { "small": "img/portfolio/project_5.7.jpg", "large": "img/portfolio/project_5.7.jpg" },
+        { "small": "img/portfolio/project_5.8.jpg", "large": "img/portfolio/project_5.8.jpg" },
+        { "small": "img/portfolio/project_5.9.jpg", "large": "img/portfolio/project_5.9.jpg" },
+        { "small": "img/portfolio/project_5.10.jpg", "large": "img/portfolio/project_5.10.jpg" },
+        { "small": "img/portfolio/project_5.11.jpg", "large": "img/portfolio/project_5.11.jpg" },
+        { "small": "img/portfolio/project_5.12.jpg", "large": "img/portfolio/project_5.12.jpg" },
+        { "small": "img/portfolio/project_5.13.jpg", "large": "img/portfolio/project_5.13.jpg" },
+        { "small": "img/portfolio/project_5.14.jpg", "large": "img/portfolio/project_5.14.jpg" },
+        { "small": "img/portfolio/project_5.15.jpg", "large": "img/portfolio/project_5.15.jpg" },
+        { "small": "img/portfolio/project_5.16.jpg", "large": "img/portfolio/project_5.16.jpg" },
+        { "small": "img/portfolio/project_5.17.jpg", "large": "img/portfolio/project_5.17.jpg" }
     ]
   },
   {
     "title": "Project 6",
     "images": [
-      { "small": "../img/portfolio/project_6.1.jpg", "large": "../img/portfolio/project_6.1.jpg" }    ]
+      { "small": "img/portfolio/project_6.1.jpg", "large": "img/portfolio/project_6.1.jpg" }    ]
   },
     {
         "title": "Project 7",
         "images": [
-        { "small": "../img/portfolio/project_7.1.jpg", "large": "../img/portfolio/project_7.1.jpg" },
-        { "small": "../img/portfolio/project_7.2.jpg", "large": "../img/portfolio/project_7.2.jpg" }
+        { "small": "img/portfolio/project_7.1.jpg", "large": "img/portfolio/project_7.1.jpg" },
+        { "small": "img/portfolio/project_7.2.jpg", "large": "img/portfolio/project_7.2.jpg" }
         ]
     },
     {
         "title": "Project 8",
         "images": [
-        { "small": "../img/portfolio/project_8.1.jpg", "large": "../img/portfolio/project_8.1.jpg" }        ]
+        { "small": "img/portfolio/project_8.1.jpg", "large": "img/portfolio/project_8.1.jpg" }        ]
     },
     {
         "title": "Project 9",
         "images": [
-        { "small": "../img/portfolio/project_9.1.jpg", "large": "../img/portfolio/project_9.1.jpg" },
-        { "small": "../img/portfolio/project_9.2.jpg", "large": "../img/portfolio/project_9.2.jpg" }
+        { "small": "img/portfolio/project_9.1.jpg", "large": "img/portfolio/project_9.1.jpg" },
+        { "small": "img/portfolio/project_9.2.jpg", "large": "img/portfolio/project_9.2.jpg" }
         ]
     },
     {
         "title": "Project 10",
         "images": [
-        { "small": "../img/portfolio/project_10.1.jpg", "large": "../img/portfolio/project_10.1.jpg" },
-        { "small": "../img/portfolio/project_10.2.jpg", "large": "../img/portfolio/project_10.2.jpg" }
+        { "small": "img/portfolio/project_10.1.jpg", "large": "img/portfolio/project_10.1.jpg" },
+        { "small": "img/portfolio/project_10.2.jpg", "large": "img/portfolio/project_10.2.jpg" }
         ]
     }
 ]
